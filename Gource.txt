@@ -1,0 +1,8 @@
+gource -1920x1080 -o "F:\Users\Voltron\gource.ppm" "F:\Users\Voltron\Dropbox\Private Server\CarEatCar"
+F:\\ffmpeg\\bin\\ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i "F:\Users\Voltron\gource.ppm" -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 F:\Users\Voltron\gource.x264.mkv"
+
+gource -1280x720 -o "F:\Users\Voltron\gource.ppm" "F:\Users\Voltron\Dropbox\Private Server\CarEatCar"
+F:\\ffmpeg\\bin\\ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i "F:\Users\Voltron\gource.ppm" -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 F:\Users\Voltron\gource.x264.mkv"
+
+gource -1280x720 -o "C:\Users\Danbo\gource.ppm" "F:\Users\Voltron\Dropbox\Private Server\CarEatCar"
+F:\\ffmpeg\\bin\\ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i "C:\Users\Danbo\gource.ppm" -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 C:\Users\Danbo\gource.x264.mkv"
