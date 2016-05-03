@@ -13,7 +13,6 @@ public class Buttons : MonoBehaviour {
 	}
 
 	public void LeftBut(){
-		Debug.Log (car.xPos);
 		switch (car.xPos) {
 		case 171:
 			car.moveTowards (0.55f);
@@ -30,7 +29,6 @@ public class Buttons : MonoBehaviour {
 	}
 
 	public void RightBut(){
-		Debug.Log (car.xPos);
 		switch (car.xPos) {
 		case -176:
 			car.moveTowards (-0.59f);
