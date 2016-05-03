@@ -11,7 +11,7 @@ public class Car : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		xPos = (int) (transform.position.x * 100);
-		target = new Vector3 (1.71f, 0f, 0f);
+		target = new Vector3 (1.71f, -2.0f, 0f);
 	}
 	
 	// Update is called once per frame
@@ -23,6 +23,6 @@ public class Car : MonoBehaviour {
 	}
 
 	public void moveTowards(float des){
-		target = new Vector3 (des, 0f, 0f);
+		target = new Vector3 (des, -2.0f, 0f);
 	}
 }
