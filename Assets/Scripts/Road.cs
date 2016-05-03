@@ -16,7 +16,7 @@ public class Road : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log(other.gameObject);
+		//Debug.Log(other.gameObject);
 		if (other.gameObject.tag == "Repeater") {
 			transform.position = new Vector3 (-1.82f, 10.24f, 0f);
 		}
