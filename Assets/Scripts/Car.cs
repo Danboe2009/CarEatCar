@@ -11,7 +11,7 @@ public class Car : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		xPos = (int) (transform.position.x * 100);
-		target = new Vector3 (1.71f, -2.0f, 0f);
+		target = new Vector3 (1.71f, -3.5f, 0f);
 	}
 	
 	// Update is called once per frame
@@ -23,13 +23,13 @@ public class Car : MonoBehaviour {
 	}
 
 	public void moveTowards(float des){
-		target = new Vector3 (des, -2.0f, 0f);
+		target = new Vector3 (des, -3.5f, 0f);
 	}
 
 	void OnCollisionEnter(Collision collision){
 		if (collision.gameObject.tag == "Micro") {
 			Destroy (collision.gameObject);
-			transform.localScale += new Vector3 (0.1f, 0.1f, 0.1f);
+			transform.localScale += new Vector3 (0.01f, 0.01f, 0.01f);
 		}
 	}
 }

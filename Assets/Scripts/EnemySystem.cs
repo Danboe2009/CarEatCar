@@ -22,7 +22,7 @@ public class EnemySystem : MonoBehaviour {
 	IEnumerator fillScreen(){
 		while (GameObject.FindGameObjectsWithTag ("Micro").Length < microNum) {
 			int rand = Random.Range(0,micro.Length);
-			Debug.Log (rand);
+			//Debug.Log (rand);
 			Instantiate (micro [rand]);
 			yield return new WaitForSeconds (3);
 		}
