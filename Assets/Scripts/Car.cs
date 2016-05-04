@@ -25,4 +25,11 @@ public class Car : MonoBehaviour {
 	public void moveTowards(float des){
 		target = new Vector3 (des, -2.0f, 0f);
 	}
+
+	void OnCollisionEnter(Collision collision){
+		if (collision.gameObject.tag == "Micro") {
+			Destroy (collision.gameObject);
+			transform.localScale += new Vector3 (0.1f, 0.1f, 0.1f);
+		}
+	}
 }
